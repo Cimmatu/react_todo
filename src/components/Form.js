@@ -6,10 +6,12 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
     }
     const submitTodoHandler = (e) => {
         e.preventDefault()
-        setTodos([
-            ...todos,
-            {text: inputText, completed: false, id: Math.random() * 1000}
-        ])
+        if (inputText !== '') {
+            setTodos([
+                ...todos,
+                {text: inputText, completed: false, id: Math.random() * 1000}
+            ])
+        }
         setInputText("")
     }
     const statusHandler = (e) => {

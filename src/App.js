@@ -26,7 +26,7 @@ const App = () => {
     return (
         <div className="App">
             <header>
-                <h1>Ed's Todo List</h1>
+                <h1>Pasha's Todo List</h1>
             </header>
             <Form
                 inputText={inputText}
